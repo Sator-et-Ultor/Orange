@@ -31,14 +31,14 @@ body {
 }
 
 .container {
-    background: #FFFFFF;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);;
 }
 
 nav {
+    background: black;
     margin-top: 15px;
 }
 nav ul {
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     display: flex;
     list-style: none;
     justify-content: right;
@@ -50,10 +50,11 @@ nav ul {
 }
 
 nav a {
+
     font-weight: bold;
     display: block;
     padding: 1em;
-    color: black;
+    color: orangered;
     text-decoration: none;
     transition: background 1s;
 }
@@ -67,14 +68,13 @@ header {
     text-align: right;
     background-image: url(5.jpg);
     background-repeat: no-repeat;
-    background-size: fill;
-    font-size: 140%;
+    background-size: cover;
     padding: 10%;
     margin: 20px 0;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 main {
@@ -88,28 +88,25 @@ main {
     padding: 15px;
     margin: 10px 0;
     text-align: center;
-    align-content: center;
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
 }
 
 .box {
     box-shadow: 3px 3px 5px rgb(82, 81, 81);
     background-color: #F9F9F9;
-    display: block;
-    padding: 10px;
-    margin: 5px auto;
-    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px  10px;
+    border: 2px solid black;
 }
 
 footer {
+    color: orangered;
     padding: 10px 0;
-    font-size: 50%;
-    text-align: center;
+    font-size: 1em;
     justify-content: center;
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     display: flex;
-    text-align: center;
-    align-items: center;
+    font-weight: bold;
+    background: black;
 }
 
 ul .logo{
@@ -130,17 +127,17 @@ ul .logo{
     margin: 50px 0;
     width: 95px;
     height: 95px;
-    animation: animacja 3s ease-in-out 1s infinite alternate none;
+    animation: animation 3s ease-in-out 1s infinite alternate none;
 }
     
 .animation:hover { animation-play-state:paused; }
     
-@keyframes animacja {
+@keyframes animation {
     0% {
         margin-left: 0;
     }
     100% {
-        margin-left: 90%;
+        margin-left: 80%;
     }
 }
 
@@ -148,14 +145,13 @@ ul .logo{
     margin: 0 30px;
 }
 #skills .box, #portfolio .box {
-    display: inline-block;
     width: 200px;
     height: 200px;
-    background-color: lightblue;
+    margin: 10px;
 }
 
 h2 {
-    margin: 40px 0 ;
+    margin: 60px 0 0 10px ;
     display: block;
     text-align: center;
     font-size: 2.5em;
@@ -165,50 +161,144 @@ h3 {
     margin: 10px;
     font-size: 1.5em;
 }
-#contact {
-    text-align: center;
-}
-
-#contact .box {
-    width: 40%;
-    display: inline-block;
-}
-
-#contact-info {
-    height: 200px;
-    width: 250px;
-}
-
-#form {
-    height: 200px;
-    width: 250px;
-}
-
-#image {
-    display: block;
-    float: left;
-    background-image: url(ID.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%;
-    height: 100%;
-}
-
-#informations {
-    display: block;
-    float: right;
-    width: 40%;
-}
 
 #welcome {
-    padding: 15px;
-    text-align: center;
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
-}
-.buttom {
-    border: 1px solid black;
-    border-radius: 5%;
-    display: inline-block;
-    margin: 0 40px;
+    font-size: 1.3em;
+    margin: 15px 0;
     padding: 10px;
+    text-align: center;
+    background-image: url(4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button {
+    border-radius: 10%;
+    background: white;
+    border: 3px solid black;
+    display: inline-block;
+    padding: 10px;
+}
+
+#skills {
+    background-image: url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portfolio {
+    background-image: url(2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    background-image: url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutme {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 60%;
+    border: 3px solid black;
+}
+
+#dzem, #sok, #ciasto {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#sok {
+    background-image: url(sok.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 500ms;
+}
+
+#sok:hover {
+    transform: scale(1.1) rotate(-10deg);
+    transition-duration: 500ms;
+}
+
+#ciasto {
+    background-image: url(ciasto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 500ms;
+}
+
+#ciasto:hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+#dzem {
+    background-image: url(dzem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 500ms;
+}
+
+#dzem:hover {
+    transform: scale(1.1) rotate(10deg);
+    transition-duration: 500ms;
+}
+
+#tymbark {
+    background-image: url(tymbark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 500ms;
+}
+
+#tymbark:hover {
+    transform: scale(1.1) rotate(-10deg);
+    transition-duration: 500ms;
+}
+
+#hortex {
+    background-image: url(hortex.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition-duration: 500ms;
+}
+
+#hortex:hover {
+    transform: scale(1.1) rotate(-5deg);
+    transition-duration: 500ms;
+}
+
+#orangina {
+    background-image: url(orangina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 500ms;
+}
+
+#orangina:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition-duration: 500ms;
+}
+
+#cappy {
+    background-image: url(cappy.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition-duration: 500ms;
+}
+
+#cappy:hover {
+    transform: scale(1.1) rotate(10deg);
+    transition-duration: 500ms;
+}
+
+#form, #contact-info {
+    height: 300px;
+    width: 300px;
 }
