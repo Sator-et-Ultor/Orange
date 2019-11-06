@@ -4,6 +4,10 @@
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -31,7 +35,7 @@ body {
 }
 
 .container {
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
 }
 
 nav {
@@ -144,6 +148,7 @@ ul .logo{
 #skills .box {
     margin: 0 30px;
 }
+
 #skills .box, #portfolio .box {
     width: 200px;
     height: 200px;
@@ -177,6 +182,16 @@ h3 {
     border: 3px solid black;
     display: inline-block;
     padding: 10px;
+    transition: background 1s;
+}
+
+#welcome a {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    background: #FFC53D
 }
 
 #skills {
@@ -203,7 +218,7 @@ h3 {
     background-size: cover;
 }
 
-img {
+#aboutme img {
     width: 60%;
     border: 3px solid black;
 }
@@ -298,7 +313,6 @@ img {
     transition-duration: 500ms;
 }
 
-#form, #contact-info {
-    height: 300px;
-    width: 300px;
+#contact .box {
+    width: 400px;
 }
